@@ -130,45 +130,6 @@ void spiral_print(int max)
 		print_count++;
 	}
 	printf("\n\n");
-/*
-	//max*max 최초값출력
-	printf("%d ", print->key);
-	//(max*max)-max*1, (max*max)-max*2, (max*max)-max*3 = t
-	for (i=0; i<max-1; i++)
-	{
-		printf("%d ", travel('u',max));
-	}
-	//t-1, t-2, t-3
-	for (i=0; i<max-1; i++)
-	{
-		printf("%d ", travel('l',max));
-	}
-	//(t-3)+max*1,(t-3)+max*2,(t-3)+max*3 = r
-	for (i=0; i<max-1; i++)
-	{
-		printf("%d ", travel('d',max));
-	}
-	//r+1, r+2
-	for (i=0; i<max-2; i++)
-	{
-		printf("%d ", travel('r',max));
-	}
-	//(r+2)-max*1, (r+2)-max*2 = y
-	for (i=0; i<max-2; i++)
-	{
-		printf("%d ", travel('u',max));
-	}
-	//y-1
-	for(i=0; i<max-3; i++)
-	{
-		printf("%d ", travel('l',max));
-	}
-	//(y-1)+max*1
-	for(i=0; i<max-3; i++)
-	{
-		printf("%d ",travel('d',max));
-	}
-*/
 }
 
 int travel(char direction, int max)
