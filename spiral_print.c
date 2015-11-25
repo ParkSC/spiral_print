@@ -67,10 +67,10 @@ int main(int argc, char* argv[])
 	for ( i = 1 ; i <= max*max ; i++ )
 	{
 		assert( tmp->key == i );
-		printf("%d번째노드값 검사  ", i);
+		printf("%d번노드/ ", i);
 		tmp = tmp->right;
 	}
-	printf("\n");
+	printf("...모든 노드 검사완료\n");
 
 	//matrix를 정해진 순서대로 출력
 	printf("\nReverse spiral printring\n");
@@ -125,12 +125,11 @@ void spiral_print(int max)
 		print = print->right;
 	}
 
-	//첫번째 항목 출
+	//첫번째 항목 출력
 	printf("%d ", print->key);
 
 	while ( print_count < 2*max-1 )
-	{	
-		//printf("(max-call : %d)", max-call_minus);
+	{
 		switch ( mode )
 		{
 			case 0: //up
